@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --footerColor: #f3f1f3;
+  --color: #533745;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 4rem auto;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid var(--color);
+  outline: none;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+::placeholder {
+  color: var(--color);
+}
+
+.container {
+  width: 500px;
+  height: 490px;
+  background-color: #f7edf0;
+  border-radius: 12px;
+  box-shadow: 0px 20px 20px rgba(130, 108, 127, 0.25);
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 320px;
+  }
+  .input-container input {
+    width: 320px;
+  }
+}
+
+.container .card-body .title {
+  font-family: "Blinker", sans-serif !important;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 1.5rem;
+}
+
+.container .card-body .location-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.container .card-body .location-box p {
+  font-size: 20px;
+  color: var(--color);
+  font-weight: 400;
+}
+
+.info {
+  font-size: 16px;
+  color: var(--color);
+  font-weight: 400;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+.degree {
+  font-size: 48px;
+  color: var(--color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  height: 65px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  margin: 0;
+  display: flex;
+  background: #826c7f;
+  border-top: 2px solid rgba(209, 199, 207, 0.69);
+}
+
+.box:nth-child(1) {
+  border-right: 1px solid #d1c7cf;
+}
+
+.box {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.box .icon {
+  color: var(--footerColor);
+}
+
+.box .text p {
+  color: var(--footerColor);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.box .text span {
+  color: var(--footerColor);
+  font-weight: 400;
+  font-size: 16px;
+}
